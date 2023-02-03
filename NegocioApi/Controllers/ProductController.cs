@@ -34,9 +34,9 @@ namespace NegocioApi.Controllers
         }
         
         [HttpDelete(Name = "DeleteProduct")]
-        public void DeleteProductItem([FromQuery] int id)
+        public void DeleteProductItem([FromQuery] int Id)
         {
-             _productService.DeleteProductItem(id);
+             _productService.DeleteProductItem(Id);
         }
 
         [HttpPatch(Name = "ModifyProduct")]
